@@ -1,0 +1,22 @@
+$navbar-height: 64px;
+.container {
+  width: calc(100% - 2rem);
+  margin: 0 1rem;
+  padding-top: 1rem; // @media screen and (max-width: 1200px) {
+  //     width: 960px;
+  // }
+  // @media screen and (max-width: 960px) {
+  //     width: 768px;
+  // }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin: 0;
+    padding-top: 0;
+  }
+  //   @media screen and (max-width: 480px) {
+  //   }
+  .fullWidth {
+    width: 100%;
+    margin: 0;
+  }
+}

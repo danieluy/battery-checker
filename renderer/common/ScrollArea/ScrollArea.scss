@@ -1,0 +1,14 @@
+.scroll-area {
+  overflow-y: scroll;
+  /* Webkit only */
+  &::-webkit-scrollbar {
+    width: 8px;
+    z-index: 1;
+  }
+  &::-webkit-scrollbar-track {}
+  &::-webkit-scrollbar-thumb {
+    width: 8px;
+    background-color: #888888;
+    border-radius: 4px;
+  }
+}

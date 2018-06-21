@@ -1,0 +1,60 @@
+{
+  "name": "battery-checker",
+  "version": "0.8.0",
+  "description": "Battery checker with stats and notifications",
+  "main": "main.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development electron .",
+    "react": "webpack --env.development --watch",
+    "build": "cross-env NODE_ENV=production webpack --config ./webpack.config.js --env.production && electron-builder ."
+  },
+  "build": {
+    "appId": "com.example.battery-checker",
+    "linux": {
+      "target": "deb"
+    }
+  },
+  "author": {
+    "name": "Daniel Sosa",
+    "email": "danielsosa.dev@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@material-ui/core": "^1.1.0",
+    "auto-launch": "^5.0.5",
+    "autoprefixer": "^8.2.0",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "chart.js": "^2.7.2",
+    "cross-env": "^5.2.0",
+    "css-loader": "^0.28.4",
+    "electron": "^2.0.2",
+    "electron-builder": "^20.15.1",
+    "eslint": "^4.7.2",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.9.1",
+    "file-loader": "^1.1.11",
+    "img-loader": "^2.0.1",
+    "node-sass": "^4.5.3",
+    "postcss-loader": "^2.0.10",
+    "react": "^16.4.0",
+    "react-chartjs-2": "^2.7.2",
+    "react-dom": "^16.4.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "uglify-es": "github:mishoo/UglifyJS2#harmony",
+    "uglifyjs-webpack-plugin": "^1.2.4",
+    "url-loader": "^1.0.1",
+    "webpack": "^3.5.3",
+    "webpack-dev-server": "^2.7.1"
+  },
+  "dependencies": {
+    "gulp-util": "^3.0.8"
+  }
+}
